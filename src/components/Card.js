@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Card({ user }) {
-  console.log(user);
+
   return (
     <div className="card">
       <img className="card-image-top" src={user.avatar_url} alt={user.login} />
