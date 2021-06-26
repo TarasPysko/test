@@ -8,7 +8,7 @@ function Card({ user }) {
         className="card-image-top"
         src={user.avatar_url}
         alt={user.login}
-        style={{ maxHeight="150px"}}
+        style={{ maxHeight: "350px" }}
       />
       <div className="card-body">
         <h5 className="card-title">{user.login}</h5>
