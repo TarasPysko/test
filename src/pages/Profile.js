@@ -7,7 +7,8 @@ function Profile({ match }) {
   const urlName = match.params.name;
   useEffect(() => {
     getUser(urlName);
-  }, [ getUser,urlName]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (loading) {
     return <p className="text-center">Загрузка</p>;
